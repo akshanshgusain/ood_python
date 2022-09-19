@@ -1,0 +1,2 @@
+class SeatPermanentlyUnavailableException(BaseException):
+    pass

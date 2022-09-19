@@ -1,0 +1,2 @@
+class AlreadyExistsException(BaseException):
+    pass

@@ -1,0 +1,2 @@
+class ScreenAlreadyOccupiedException(BaseException):
+    pass
