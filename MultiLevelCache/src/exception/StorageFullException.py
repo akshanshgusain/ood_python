@@ -1,0 +1,2 @@
+class StorageFullException(BaseException):
+    pass
