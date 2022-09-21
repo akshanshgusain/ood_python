@@ -1,16 +1,18 @@
-# Low Level System Design - Cab booking like Uber/Ola/Grab etc.
+# Low Level System Design - Cab booking like Uber/Ola/Grab/lyft etc.
+### Python Machine Code
 
-### Video explanation
-[https://youtu.be/Yn7C0x5ozx4](https://youtu.be/Yn7C0x5ozx4)
 
+
+---
+#### Original Java Solution by [Udit Agarwal](https://www.youtube.com/playlist?list=PL564gOx0bCLpAL7yMJqOuK3_hBuLkyRhn)
+#### Follow Udit Agarwal [Linkedin](https://www.linkedin.com/in/anomaly2104/)
+
+---
 ### Problem Statement
 [Check here](problem-statement.md)
 
-### Project Requirements
 
-* JDK 1.8
-* Maven
-* For Unit Tests:  
-  * Junit 4
-  * Mockito
+
+---
+#### If you find it helpful add me on [Linkedin](https://www.linkedin.com/in/akshansh-gusain-23023374/)
 
