@@ -1,0 +1,2 @@
+class CabNotFoundException(BaseException):
+    pass

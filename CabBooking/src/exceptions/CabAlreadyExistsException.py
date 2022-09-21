@@ -1,0 +1,2 @@
+class CabAlreadyExistsException(BaseException):
+    pass

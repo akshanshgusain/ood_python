@@ -1,0 +1,2 @@
+class RiderNotFoundException(BaseException):
+    pass

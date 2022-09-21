@@ -1,0 +1,2 @@
+class NoCabsAvailableException(BaseException):
+    pass
