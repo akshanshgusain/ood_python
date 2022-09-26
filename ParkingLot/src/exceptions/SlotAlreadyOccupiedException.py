@@ -1,0 +1,2 @@
+class SlotAlreadyOccupiedException(BaseException):
+    pass

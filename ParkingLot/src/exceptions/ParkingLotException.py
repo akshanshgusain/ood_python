@@ -1,0 +1,2 @@
+class ParkingLotException(BaseException):
+    pass
