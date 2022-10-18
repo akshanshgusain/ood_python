@@ -1,0 +1,2 @@
+class PieceNotFoundException(BaseException):
+    pass

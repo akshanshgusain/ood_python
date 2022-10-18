@@ -116,3 +116,5 @@ class BaseTest(unittest.TestCase):
 
         with self.assertRaises(CabNotFoundException):
             self.cab_controller.update_cab_availability(self.gen_id(), False)
+
+
