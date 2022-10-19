@@ -1,6 +1,7 @@
-from iStorage import iStorage
+
 from src.exceptions.NotFoundException import NotFoundException
 from src.exceptions.StorageFullException import StorageFullException
+from src.storage.iStorage import iStorage
 
 
 class HashMapBasedStorage(iStorage):

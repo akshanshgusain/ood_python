@@ -1,0 +1,3 @@
+
+class InvalidNodeException(BaseException):
+    pass
