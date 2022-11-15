@@ -122,3 +122,14 @@ class SlotAllocationTests(BaseTest):
         # self.assertTrue(slot2 in all_slots)
         # self.assertTrue(slot2 in all_available_slots_post_1)
         # self.assertFalse(slot2 in all_available_slots_post_2)
+
+        # After deallocating slot1, it should get available. Slot2 should still be occupied.
+        self.locker_controller.deallocate_slot(slot1)
+        self.assertTrue(slot1 in self.locker_controller.get_available_slots())
+        self.assertFalse(slot2 in self.locker_controller.get_available_slots())
+
+        # After deallocating slot2 also now, both should be available now;
+        self.locker_controller.deallocate_slot(slot2)
+        self.assertTrue(slot1 in self.locker_controller.get_available_slots())
+        self.assertTrue(slot2 in self.locker_controller.get_available_slots())
+    
