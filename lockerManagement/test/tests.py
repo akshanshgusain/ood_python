@@ -138,3 +138,7 @@ class SlotAllocationTests(BaseTest):
         with self.assertRaises(NoSlotAvailableException):
             self.order_controller.allocate_locker(random_buyer(), random_locker_item(Size(10, 10)))
 
+    def test_slot_allocation_without_matching_slots_throws_exception(self):
+        with self.assertRaises(NoSlotAvailableException):
+            create_test_locker_with_slots(self.locker_controller, 10, Size(5, 5))
+            self.order_controller.allocate_locker(random_buyer(), random_locker_item(Size(10, 10)))
