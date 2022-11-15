@@ -2,6 +2,7 @@ import unittest
 import uuid
 
 from src.controllers import *
+from src.exceptions import NoSlotAvailableException
 from src.models import Contact, Package
 from src.repositories import *
 from src.strategies import *
@@ -132,4 +133,8 @@ class SlotAllocationTests(BaseTest):
         self.locker_controller.deallocate_slot(slot2)
         self.assertTrue(slot1 in self.locker_controller.get_available_slots())
         self.assertTrue(slot2 in self.locker_controller.get_available_slots())
-    
+
+    def test_slot_allocation_without_adding_slots_throws_exception(self):
+        with self.assertRaises(NoSlotAvailableException):
+            self.order_controller.allocate_locker(random_buyer(), random_locker_item(Size(10, 10)))
+
